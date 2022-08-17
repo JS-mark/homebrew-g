@@ -7,6 +7,7 @@ class G < Formula
   url "https://github.com/voidint/g/releases/download/v1.4.0/g1.4.0.darwin-amd64.tar.gz"
   sha256 "81e6b1301764683c6576e551da009ae05878ec611925237f83c12ea2f64da863"
   license "MIT"
+  version "1.4.0"
 
   # depends_on "cmake" => :build
 
@@ -16,7 +17,7 @@ class G < Formula
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
     # system "./configure", *std_configure_args, "--disable-silent-rules"
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
-    bin.install "G"
+    bin.install "g"
   end
 
   test do
