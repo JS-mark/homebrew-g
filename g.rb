@@ -15,7 +15,7 @@ class G < Formula
       sha256 "636919cdb4ac865bcfff16be11c786550df5986dec190396745bb834676465de"
 
       def install
-        bin.install "g" => "gm"
+        bin.install "g" => "gmv"
       end
     end
     if Hardware::CPU.intel?
@@ -23,7 +23,7 @@ class G < Formula
       sha256 "81e6b1301764683c6576e551da009ae05878ec611925237f83c12ea2f64da863"
 
       def install
-        bin.install "g" => "gm"
+        bin.install "g" => "gmv"
       end
     end
   end
@@ -34,7 +34,7 @@ class G < Formula
       sha256 "fa554201529692cfc1972b868c9b5a1ca823b305c01ef4b7804a6be45132c94e"
 
       def install
-        bin.install "g" => "gm"
+        bin.install "g" => "gmv"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
@@ -42,7 +42,7 @@ class G < Formula
       sha256 "7dc6a511aa98dd1bd069a587a82f9aef3ce83d4c19d559b52f16382182da7cce"
 
       def install
-        bin.install "g" => "gm"
+        bin.install "g" => "gmv"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
@@ -50,7 +50,7 @@ class G < Formula
       sha256 "5850bde46d6c5acb764db732e75c18dd2bf9fe968b48b17076af6dff6c481cde"
 
       def install
-        bin.install "g" => "gm"
+        bin.install "g" => "gmv"
       end
     end
   end
@@ -70,6 +70,6 @@ class G < Formula
   end
 
   test do
-    system bin/"g", "ls-remote"
+    system bin/"gmv", "ls-remote"
   end
 end
