@@ -7,11 +7,11 @@ class G < Formula
   homepage "https://github.com/voidint/g"
   license "MIT"
   head "https://github.com/JS-mark/homebrew-g.git", branch: "main"
-  version "1.4.0"
+  version "1.5.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/voidint/g/releases/download/v1.4.0/g1.4.0.darwin-arm64.tar.gz"
+      url "https://github.com/voidint/g/releases/download/v1.5.0/g1.5.0.darwin-arm64.tar.gz"
       sha256 "636919cdb4ac865bcfff16be11c786550df5986dec190396745bb834676465de"
 
       def install
@@ -19,7 +19,7 @@ class G < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/voidint/g/releases/download/v1.4.0/g1.4.0.darwin-amd64.tar.gz"
+      url "https://github.com/voidint/g/releases/download/v1.5.0/g1.5.0.darwin-amd64.tar.gz"
       sha256 "81e6b1301764683c6576e551da009ae05878ec611925237f83c12ea2f64da863"
 
       def install
@@ -30,7 +30,7 @@ class G < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/voidint/g/releases/download/v1.4.0/g1.4.0.linux-amd64.tar.gz"
+      url "https://github.com/voidint/g/releases/download/v1.5.0/g1.5.0.linux-amd64.tar.gz"
       sha256 "fa554201529692cfc1972b868c9b5a1ca823b305c01ef4b7804a6be45132c94e"
 
       def install
@@ -38,7 +38,7 @@ class G < Formula
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/voidint/g/releases/download/v1.4.0/g1.4.0.linux-arm.tar.gz"
+      url "https://github.com/voidint/g/releases/download/v1.5.0/g1.5.0.linux-arm.tar.gz"
       sha256 "7dc6a511aa98dd1bd069a587a82f9aef3ce83d4c19d559b52f16382182da7cce"
 
       def install
@@ -46,7 +46,7 @@ class G < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/voidint/g/releases/download/v1.4.0/g1.4.0.linux-arm64.tar.gz"
+      url "https://github.com/voidint/g/releases/download/v1.5.0/g1.5.0.linux-arm64.tar.gz"
       sha256 "5850bde46d6c5acb764db732e75c18dd2bf9fe968b48b17076af6dff6c481cde"
 
       def install
