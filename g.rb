@@ -12,7 +12,7 @@ class G < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/voidint/g/releases/download/v1.5.0/g1.5.0.darwin-arm64.tar.gz"
-      sha256 "636919cdb4ac865bcfff16be11c786550df5986dec190396745bb834676465de"
+      sha256 "14addde06095d5350c69ff37334308031c04b76fa72541352aeb64c79f4f70d7"
 
       def install
         bin.install "g" => "gmv"
@@ -20,7 +20,7 @@ class G < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/voidint/g/releases/download/v1.5.0/g1.5.0.darwin-amd64.tar.gz"
-      sha256 "81e6b1301764683c6576e551da009ae05878ec611925237f83c12ea2f64da863"
+      sha256 "f834b80ec1285d6d02fb512e48c731893cb0eade7be69d2ecb345816c2f66e29"
 
       def install
         bin.install "g" => "gmv"
@@ -31,7 +31,7 @@ class G < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/voidint/g/releases/download/v1.5.0/g1.5.0.linux-amd64.tar.gz"
-      sha256 "fa554201529692cfc1972b868c9b5a1ca823b305c01ef4b7804a6be45132c94e"
+      sha256 "1c9f35a735c397909d5cfa16c06688531b9f645da68a450b8a12c98f3c65e94f"
 
       def install
         bin.install "g" => "gmv"
@@ -39,7 +39,7 @@ class G < Formula
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/voidint/g/releases/download/v1.5.0/g1.5.0.linux-arm.tar.gz"
-      sha256 "7dc6a511aa98dd1bd069a587a82f9aef3ce83d4c19d559b52f16382182da7cce"
+      sha256 "85a60046c70f091ee5d220d8515368b9773ee178e7cd98528df375c377e10b54"
 
       def install
         bin.install "g" => "gmv"
@@ -47,7 +47,7 @@ class G < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/voidint/g/releases/download/v1.5.0/g1.5.0.linux-arm64.tar.gz"
-      sha256 "5850bde46d6c5acb764db732e75c18dd2bf9fe968b48b17076af6dff6c481cde"
+      sha256 "9889ca23fe13684b26bfb83aec5af2e79a56966795999b7e89893e9ddf546d87"
 
       def install
         bin.install "g" => "gmv"
