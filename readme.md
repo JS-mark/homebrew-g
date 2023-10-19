@@ -4,7 +4,7 @@
 
 ## 版本
 
-- new version 1.5.0
+- new version 1.5.2
 - version 1.4.0
 
 ## 使用
