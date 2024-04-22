@@ -7,20 +7,20 @@ class G < Formula
   homepage "https://github.com/voidint/g"
   license "MIT"
   head "https://github.com/JS-mark/homebrew-g.git", branch: "main"
-  version "1.5.2"
+  version "1.6.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/voidint/g/releases/download/v1.5.2/g1.5.2.darwin-arm64.tar.gz"
-      sha256 "3af235c47216e98380912befa2f4869110c66a6d22503e0cb69642c99a25648f"
+      url "https://github.com/voidint/g/releases/download/v1.6.0/g1.6.0.darwin-arm64.tar.gz"
+      sha256 "a2f2e01806da9fe98da4726a24833f69ab0986347b21688bf3018820f764ca54"
 
       def install
         bin.install "g" => "gmv"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/voidint/g/releases/download/v1.5.2/g1.5.2.darwin-amd64.tar.gz"
-      sha256 "c2d07156617834ab2b8de03652a606ffd2d53b6936110a8c1b44321e37163752"
+      url "https://github.com/voidint/g/releases/download/v1.6.0/g1.6.0.darwin-amd64.tar.gz"
+      sha256 "a7b8f666807947a95362eb63b44c797e8077cede0ece77496c66deee2b58d40a"
 
       def install
         bin.install "g" => "gmv"
@@ -30,24 +30,24 @@ class G < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/voidint/g/releases/download/v1.5.2/g1.5.2.linux-amd64.tar.gz"
-      sha256 "82101d57e367ef1db7cd0b12e82e334605aaebeabb72e1537dabb294d7a84ca6"
+      url "https://github.com/voidint/g/releases/download/v1.6.0/g1.6.0.linux-amd64.tar.gz"
+      sha256 "135390891f0e50b20d5cdc8b378f10c5da0cc08d2a1fb9f63f334b6c3707f7f2"
 
       def install
         bin.install "g" => "gmv"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/voidint/g/releases/download/v1.5.2/g1.5.2.linux-arm.tar.gz"
-      sha256 "185e9169d8c15a4243e00772dcf3ae4a511a527590f3bc23892ebaeb0b756e01"
+      url "https://github.com/voidint/g/releases/download/v1.6.0/g1.6.0.linux-arm.tar.gz"
+      sha256 "4949c3a9af43e0eae3f1ba5fa4ce91d520229a572dd0d409dc84365f124c7968"
 
       def install
         bin.install "g" => "gmv"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/voidint/g/releases/download/v1.5.2/g1.5.2.linux-arm64.tar.gz"
-      sha256 "832d88fb1f762c1b661dfa0b9bb5980af541d11cc410d118cfea4e471ccb043c"
+      url "https://github.com/voidint/g/releases/download/v1.6.0/g1.6.0.linux-arm64.tar.gz"
+      sha256 "95c466d68db0b3916718e71f64910761876841b0c4f508b56d613ccfd2bc89c1"
 
       def install
         bin.install "g" => "gmv"
