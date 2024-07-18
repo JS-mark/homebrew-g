@@ -11,16 +11,16 @@ class G < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/voidint/g/releases/download/v1.6.0/g1.6.0.darwin-arm64.tar.gz"
-      sha256 "a2f2e01806da9fe98da4726a24833f69ab0986347b21688bf3018820f764ca54"
+      url "https://github.com/voidint/g/releases/download/v1.7.0/g1.7.0.darwin-arm64.tar.gz"
+      sha256 "eab491b9c1874479a84c0bd0af2d241b210755a4f3ee34a3c37c7c880179d327"
 
       def install
         bin.install "g" => "gmv"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/voidint/g/releases/download/v1.6.0/g1.6.0.darwin-amd64.tar.gz"
-      sha256 "a7b8f666807947a95362eb63b44c797e8077cede0ece77496c66deee2b58d40a"
+      url "https://github.com/voidint/g/releases/download/v1.7.0/g1.7.0.darwin-amd64.tar.gz"
+      sha256 "ef244370794377921fa62ef2fe67673c7e5bf73f3ef566095564391eceb0d340"
 
       def install
         bin.install "g" => "gmv"
@@ -30,24 +30,24 @@ class G < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/voidint/g/releases/download/v1.6.0/g1.6.0.linux-amd64.tar.gz"
-      sha256 "135390891f0e50b20d5cdc8b378f10c5da0cc08d2a1fb9f63f334b6c3707f7f2"
+      url "https://github.com/voidint/g/releases/download/v1.7.0/g1.7.0.linux-amd64.tar.gz"
+      sha256 "d0f3837a75b1555a43c9a8489b58837c7ae6fc3413c40843813aee83e791b271"
 
       def install
         bin.install "g" => "gmv"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/voidint/g/releases/download/v1.6.0/g1.6.0.linux-arm.tar.gz"
-      sha256 "4949c3a9af43e0eae3f1ba5fa4ce91d520229a572dd0d409dc84365f124c7968"
+      url "https://github.com/voidint/g/releases/download/v1.7.0/g1.7.0.linux-arm.tar.gz"
+      sha256 "7292ab6472a920e844565a566f181ccc8fcd5c229fddbddd723fcd7a20e0a13d"
 
       def install
         bin.install "g" => "gmv"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/voidint/g/releases/download/v1.6.0/g1.6.0.linux-arm64.tar.gz"
-      sha256 "95c466d68db0b3916718e71f64910761876841b0c4f508b56d613ccfd2bc89c1"
+      url "https://github.com/voidint/g/releases/download/v1.7.0/g1.7.0.linux-arm64.tar.gz"
+      sha256 "472357653be8ba5dc67db83d62b2b326f61ec725f16bad42840e8ddf8f878bea"
 
       def install
         bin.install "g" => "gmv"
