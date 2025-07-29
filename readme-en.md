@@ -4,8 +4,8 @@
 
 ## Version
 
-- new version 1.7.0
-- version 1.6.0
+- new version 1.8.0
+- version 1.7.0
 
 ## Use
 
